@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON | Pizza </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍕 Pizza</div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y Dominios</a>
+        <a href="cuestionario.html">Cuestionario</a>
+    </nav>
+</header>
+
+<main class="contenido">
+
+    <h1>JSON</h1>
+
+    <p>
+        JSON significa JavaScript Object Notation. Es un formato ligero
+        utilizado para almacenar y transmitir información.
+    </p>
+
+    <h2>¿Por qué es importante?</h2>
+
+    <p>
+        JSON es muy utilizado para intercambiar información entre una
+        página web y un servidor o una API.
+    </p>
+
+    <h2>Objeto JavaScript</h2>
+
+    <pre><code>
+const pizza = {
+    nombre: "Pizza Suprema",
+    precio: 12.50,
+    disponible: true
+};
+    </code></pre>
+
+    <h2>Cadena JSON</h2>
+
+    <pre><code>
+{
+    "nombre": "Pizza Suprema",
+    "precio": 12.50,
+    "disponible": true
+}
+    </code></pre>
+
+    <h2>Estructura de JSON</h2>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <h3>🔑 Clave</h3>
+            <p>
+                Es el nombre que identifica un dato.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>📦 Valor</h3>
+            <p>
+                Es la información almacenada.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>📋 Arreglos</h3>
+            <p>
+                Permiten almacenar varios valores utilizando corchetes.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>🗂️ Objetos</h3>
+            <p>
+                Permiten organizar información mediante pares clave-valor.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Ejemplo de un menú de Pizza Bonilla</h2>
+
+    <pre><code>
+{
+    "pizzas": [
+        {
+            "nombre": "Pizza Pepperoni",
+            "precio": 8.00
+        },
+        {
+            "nombre": "Pizza Suprema",
+            "precio": 12.50
+        },
+        {
+            "nombre": "Pizza Hawaiana",
+            "precio": 9.00
+        }
+    ]
+}
+    </code></pre>
+
+    <h2>JSON y las APIs</h2>
+
+    <p>
+        Una aplicación web puede solicitar información a un servidor.
+        El servidor puede responder utilizando datos en formato JSON.
+        De esta forma, la página puede recibir información como productos,
+        precios, usuarios o pedidos.
+    </p>
+
+    <h2>Fuente consultada</h2>
+
+    <p>
+        MDN Web Docs - JSON.
+    </p>
+
+</main>
+
+<footer>
+    <p>🍕 Pizza | Tecnología JSON</p>
+</footer>
+
+</body>
+</html>

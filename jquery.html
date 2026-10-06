@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery | Pizza </title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🍕 Pizza </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="javascript.html">JavaScript</a>
+        <a href="jquery.html">jQuery</a>
+        <a href="json.html">JSON</a>
+        <a href="hosting.html">Hosting y Dominios</a>
+        <a href="cuestionario.html">Cuestionario</a>
+    </nav>
+</header>
+
+<main class="contenido">
+
+    <h1>jQuery</h1>
+
+    <p>
+        jQuery es una biblioteca de JavaScript creada para facilitar tareas
+        frecuentes como seleccionar elementos, manejar eventos, realizar
+        animaciones y modificar páginas web.
+    </p>
+
+    <h2>¿Por qué nació jQuery?</h2>
+
+    <p>
+        jQuery surgió para simplificar el desarrollo web y facilitar el
+        trabajo con diferentes navegadores mediante una sintaxis más sencilla.
+    </p>
+
+    <h2>Sintaxis básica</h2>
+
+    <pre><code>
+$("#mensaje").hide();
+
+$("#boton").click(function() {
+    $("#mensaje").show();
+});
+    </code></pre>
+
+    <h2>JavaScript vs jQuery</h2>
+
+    <div class="tabla-contenedor">
+
+        <table>
+
+            <tr>
+                <th>JavaScript Vanilla</th>
+                <th>jQuery</th>
+            </tr>
+
+            <tr>
+                <td>
+                    document.getElementById("mensaje")
+                </td>
+
+                <td>
+                    $("#mensaje")
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    elemento.style.display = "none";
+                </td>
+
+                <td>
+                    $("#mensaje").hide();
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    elemento.addEventListener("click", funcion);
+                </td>
+
+                <td>
+                    $("#boton").click(funcion);
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <h2>Ventajas</h2>
+
+    <ul class="lista">
+        <li>Sintaxis sencilla.</li>
+        <li>Facilita la manipulación del DOM.</li>
+        <li>Incluye métodos para animaciones.</li>
+        <li>Facilita algunas tareas comunes.</li>
+    </ul>
+
+    <h2>Desventajas</h2>
+
+    <ul class="lista">
+        <li>Es necesario cargar una biblioteca adicional.</li>
+        <li>JavaScript moderno puede realizar muchas tareas sin jQuery.</li>
+        <li>Algunos proyectos actuales prefieren JavaScript Vanilla.</li>
+    </ul>
+
+    <h2>Ejemplo de animación</h2>
+
+    <button id="mostrarPizza">
+        Mostrar pizza
+    </button>
+
+    <button id="ocultarPizza">
+        Ocultar pizza
+    </button>
+
+    <div id="pizzaAnimada" class="pizza-demo">
+        🍕 Pizza  🍕
+    </div>
+
+    <h2>Fuente consultada</h2>
+
+    <p>
+        jQuery Documentation.
+    </p>
+
+</main>
+
+<footer>
+    <p>🍕 Pizza | Tecnología jQuery</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
